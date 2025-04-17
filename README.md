@@ -28,13 +28,19 @@ A modern framework for building both web and native applications using AstroJS, 
    pnpm install
    ```
 
-2. Start the web application:
+2. Compile the local UI package:
+
+   ```bash
+   cd packages/ui && pnpm build
+   ```
+
+3. Start the web application:
 
    ```bash
    pnpm dev:web
    ```
 
-3. Start the native application:
+4. Start the native application:
 
    ```bash
    pnpm dev:native
