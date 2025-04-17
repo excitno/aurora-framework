@@ -1,0 +1,15 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { Button } from '@aurora/ui';
+---
+
+<MainLayout title="Welcome to Aurora">
+  <main class="min-h-screen p-8">
+    <h1 class="text-4xl font-bold mb-8">Welcome to Aurora Framework</h1>
+    <div class="space-x-4">
+      <Button client:only="react">Primary Button</Button>
+      <Button variant="secondary" client:only="react">Secondary Button</Button>
+      <Button variant="outline" client:only="react">Outline Button</Button>
+    </div>
+  </main>
+</MainLayout> 
