@@ -1,0 +1,23 @@
+{
+  "name": "aurora",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @aurora/web dev",
+    "dev:native": "pnpm --filter @aurora/native tauri dev",
+    "build:web": "pnpm --filter @aurora/web build",
+    "build:native": "pnpm --filter @aurora/native tauri build",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+} 

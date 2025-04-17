@@ -1,0 +1,19 @@
+[package]
+name = "aurora-native"
+version = "0.0.1"
+description = "Aurora Native Application"
+authors = ["Gaute Rønningen"]
+license = "MIT"
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5.0", features = [] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.5.0", features = [] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
